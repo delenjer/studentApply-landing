@@ -1,0 +1,63 @@
+.for-students {
+  //margin-top: 23.8rem;
+  text-align: center;
+
+  &__title {
+    margin-top: 5.6rem;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 80.1rem;
+    margin: 1.6rem auto 0;
+  }
+
+  &__info {
+    position: relative;
+    width: 100%;
+    max-width: 100.6rem;
+    margin: 5.6rem auto 0;
+    z-index: 5;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 54, 166, 0.16);
+      filter: blur(140px);
+      z-index: 4;
+    }
+
+    &--img {
+      position: relative;
+      width: 100%;
+      object-fit: contain;
+      z-index: 5;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 12rem;
+
+    &__title {
+      margin-top: 2rem;
+    }
+
+    &__info {
+      margin: 4rem auto 0;
+    }
+  }
+}
+
+//.info-col {
+//  &__img {
+//     position: relative;
+//     width: 100%;
+//    object-fit: contain;
+//     z-index: 5;
+//  }
+//}

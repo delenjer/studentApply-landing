@@ -1,0 +1,75 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16.8rem auto 0;
+
+  &__col {
+    width: 40.4rem;
+  }
+
+  &__icon {
+    display: flex;
+    width: 7.2rem;
+    height: 7.2rem;
+    background-color: #ebF2ff;
+    opacity: 0.5;
+    border-radius: 50%;
+
+    &--img {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    margin-top: 2.4rem;
+  }
+
+  &__text {
+    line-height: 2.4rem;
+    margin-top: 1.2rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 14rem auto 0;
+
+    &__icon {
+      margin: 0 auto;
+    }
+
+    &__col {
+      width: 50%;
+      text-align: center;
+
+      &:first-of-type {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    &__col {
+      width: 100%;
+
+      &:first-of-type {
+        padding-right: 0;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 11rem auto 0;
+  }
+}

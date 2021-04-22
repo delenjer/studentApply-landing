@@ -1,0 +1,24 @@
+.personal-plane {
+  position: relative;
+  margin: 25.6rem auto 0;
+  text-align: center;
+
+  &__text {
+    margin: 1.6rem auto 0;
+    width: 100%;
+    max-width: 65rem;
+  }
+
+  &__info {
+    position: relative;
+    margin: 5.6rem auto 0;
+    transform: scale(1.1, 1.1);
+    z-index: 5;
+
+    &--img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
