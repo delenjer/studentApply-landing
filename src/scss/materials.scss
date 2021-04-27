@@ -1,0 +1,28 @@
+.materials {
+  margin-top: 12rem;
+  text-align: center;
+
+  &__text {
+    margin-top: 1.6rem;
+  }
+
+  &__info {
+    margin-top: -5rem;
+
+    &--img {
+      position: relative;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    &__info {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 8rem auto 0;
+  }
+}

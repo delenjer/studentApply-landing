@@ -1,0 +1,38 @@
+.for-partners {
+  margin-top: 10rem;
+  text-align: center;
+
+  &__title {
+    margin-top: 5.6rem;
+  }
+
+  &__text {
+    margin-top: 1.6rem;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+
+    &--wrap {
+      width: 100%;
+      max-width: 130rem;
+    }
+
+    &--img {
+      display: block;
+      position: relative;
+      width: 100%;
+      object-fit: contain;
+      z-index: 5;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 8rem auto 0;
+
+    &__title {
+      margin-top: 2rem;
+    }
+  }
+}
