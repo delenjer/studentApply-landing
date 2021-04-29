@@ -82,3 +82,20 @@
     font-size: 2.5rem;
   }
 }
+
+.icon {
+  display: flex;
+  width: 7.2rem;
+  height: 7.2rem;
+  background-color: #ebF2ff;
+  opacity: 0.5;
+  border-radius: 50%;
+
+  &--img {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+    margin: auto;
+  }
+}
