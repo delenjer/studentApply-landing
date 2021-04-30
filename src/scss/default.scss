@@ -1,26 +1,30 @@
-.section-top {
-  padding-top: 6rem;
-  background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
-}
-
-.section-bottom {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
-}
+//.section-top {
+//  padding-top: 6rem;
+//  background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
+//}
+//
+//.section-bottom {
+//  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
+//}
 
 .wrapper {
   width: 100%;
   max-width: 100.96rem;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 1rem;
+  }
 }
 
 .main-info {
   position: relative;
   width: 98%;
   max-width: 132rem;
-  margin: 0 auto;
+  margin: 6rem auto 0;
   background-color: #fff;
   // border: 16px solid rgba(255, 255, 255, 0.7);
-  border: 16px solid rgba(248, 248, 255, 0.5);
+  border: 16px solid rgba(248, 248, 255, 0.7);
   border-bottom: 0;
   border-radius: 48px 48px 0 0;
 
@@ -30,15 +34,15 @@
   }
 }
 
-.service {
-  position: relative;
-  width: 98%;
-  max-width: 132rem;
-  margin: 0 auto;
-  background: url("../img/bg.png") no-repeat center;
-  background-size: contain;
-  padding-bottom: 30rem;
-}
+//.service {
+//  position: relative;
+//  width: 98%;
+//  max-width: 132rem;
+//  margin: 0 auto;
+//  background: url("../img/bg.png") no-repeat center;
+//  background-size: contain;
+//  padding-bottom: 30rem;
+//}
 
 .title {
   letter-spacing: 0.1px;
@@ -72,8 +76,26 @@
   font-weight: bold;
   letter-spacing: 0.1px;
   color: $title-for;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     font-size: 2.5rem;
+  }
+}
+
+.icon {
+  display: flex;
+  width: 7.2rem;
+  height: 7.2rem;
+  background-color: #ebF2ff;
+  opacity: 0.5;
+  border-radius: 50%;
+
+  &--img {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+    margin: auto;
   }
 }

@@ -32,6 +32,35 @@
     filter: blur(134px);
   }
 
+  &__application-tracking-right {
+    top: 0;
+    right: -5rem;
+    width: 58.3rem;
+    height: 58.3rem;
+    background-color: #f6655a;
+    filter: blur(134px);
+  }
+
+  &__our-service-right {
+    top: 0;
+    right: 0;
+    width: 53.7rem;
+    height: 53.7rem;
+    background-color: #4f87fb;
+    opacity: 0.2;
+    filter: blur(174px);
+  }
+
+  &__footer-left {
+    top: 0;
+    left: 0;
+    width: 35.8rem;
+    height: 35.8rem;
+    background-color: #f08c00;
+    opacity: 0.2;
+    filter: blur(174px);
+  }
+
 
   @media screen and (max-width: 768px) {
     &__top-right,
@@ -46,6 +75,12 @@
 
     &__top-right {
       right: 0;
+    }
+
+    &__application-tracking-right {
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

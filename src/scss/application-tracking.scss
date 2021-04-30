@@ -1,0 +1,28 @@
+.application-tracking {
+  position: relative;
+
+  &__wrap {
+    width: 100%;
+    max-width: 123.7rem;
+    margin: 12rem auto 0;
+    text-align: center;
+  }
+
+  &__info {
+    position: relative;
+    margin: 5.6rem auto 0;
+    z-index: 5;
+
+    &--img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__wrap {
+      padding: 0 1rem;
+    }
+  }
+}

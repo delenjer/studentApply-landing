@@ -1,6 +1,6 @@
 .personal-plane {
   position: relative;
-  margin: 25.6rem auto 0;
+  margin: 12rem auto 0;
   text-align: center;
 
   &__text {
@@ -20,5 +20,9 @@
       width: 100%;
       object-fit: cover;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 8rem auto 0;
   }
 }

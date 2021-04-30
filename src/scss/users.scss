@@ -1,7 +1,6 @@
 .users {
   position: relative;
   margin-top: 25.6rem;
-  margin-bottom: 23.8rem;
 
   &__text {
     margin-top: 1.6rem;
@@ -73,7 +72,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: 18rem;
+    margin-top: 12rem;
 
     &__wrap {
       flex-direction: column;
