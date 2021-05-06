@@ -1,3 +1,5 @@
+@import "mixins";
+
 .profile {
   position: relative;
   margin-top: 23.6rem;
@@ -24,38 +26,24 @@
     }
   }
 
-  &__info-col {
-    position: relative;
-
+  &__col {
     &--min {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-38%);
-      width: 43%;
-      z-index: 5;
-
-      &:before {
-        content: "";
-        @include shadow-box;
-      }
+      @include custom-col-min(43%, $translateY: -38%);
     }
 
     &--left {
-      left: 1.5rem;
+      @include custom-col-min-position-left($left: 1.5rem);
     }
 
     &--right {
-      right: 1.5rem;
+      @include custom-col-min-position-right($right: 1.5rem);
     }
 
     &--max {
-      width: 52.2%;
-      //width: 57.3rem;
-      margin: auto;
-      z-index: 6;
+      @include custom-col-max(52.2%);
 
       @media screen and (max-width: 1024px) {
-        width: 55%;
+        @include custom-col-max(55%);
       }
     }
   }
