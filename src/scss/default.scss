@@ -1,13 +1,14 @@
 @import "mixins";
 
-//.section-top {
-//  padding-top: 6rem;
-//  background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
-//}
-//
-//.section-bottom {
-//  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
-//}
+.section-top {
+  padding-top: 6rem;
+  background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section-bottom {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
+}
 
 .wrapper {
   width: 100%;
@@ -19,32 +20,47 @@
   }
 }
 
-.main-info {
+.main-info,
+.to-students {
   position: relative;
   width: 98%;
   max-width: 132rem;
+  background-color: #fff;
+
+  @media screen and (max-width: 768px) {
+    border: 8px solid rgba(240, 248, 255, 0.7);
+  }
+}
+
+.main-info {
   margin: 6rem auto 0;
   background-color: #fff;
-  // border: 16px solid rgba(255, 255, 255, 0.7);
-  border: 16px solid rgba(248, 248, 255, 0.7);
+  // border: 16px solid rgba(255, 255, 255, 0.1);
+  border: 16px solid rgba(248, 248, 255, 0.5);
   border-bottom: 0;
   border-radius: 48px 48px 0 0;
 
   @media screen and (max-width: 768px) {
     margin: 2rem auto 0;
-    border: 8px solid rgba(240, 248, 255, 0.7);
   }
 }
 
-//.service {
-//  position: relative;
-//  width: 98%;
-//  max-width: 132rem;
-//  margin: 0 auto;
-//  background: url("../img/bg.png") no-repeat center;
-//  background-size: contain;
-//  padding-bottom: 30rem;
-//}
+.to-students {
+  margin: 0 auto;
+  // border: 12px solid rgba(255, 255, 255, 0.4);
+  //border: 16px solid rgba(248, 248, 255, 0.5);
+  //border-top: 0;
+  //border-radius: 0 0 48px 48px;
+  z-index: 7;
+  background: url("../img/bg.png") no-repeat center;
+  background-size: contain;
+  padding-bottom: 35rem;
+
+  @media screen and (max-width: 1200px) {
+    background: none;
+    padding-bottom: 0;
+  }
+}
 
 .title {
   letter-spacing: 0.1px;

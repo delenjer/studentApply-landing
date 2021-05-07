@@ -1,6 +1,8 @@
+@import "mixins";
+
 .personal-plane {
   position: relative;
-  margin: 12rem auto 0;
+  margin-top: 25.6rem;
   text-align: center;
 
   &__text {
@@ -11,18 +13,70 @@
 
   &__info {
     position: relative;
-    margin: 5.6rem auto 0;
-    transform: scale(1.1, 1.1);
-    z-index: 5;
+    margin-top: 5.6rem;
+    z-index: 6;
 
     &--img {
+      position: relative;
       display: block;
       width: 100%;
       object-fit: cover;
+      z-index: 5;
+    }
+  }
+
+  &__col {
+    &--min {
+      @include custom-col-min(30%, $translateY: -32%);
+    }
+
+    &--left {
+      @include custom-col-min-position-left($left: 8rem);
+    }
+
+    &--right {
+      @include custom-col-min-position-right($right: 9rem);
+      top: 71%;
+      width: 20%;
+      z-index: 7;
+    }
+
+    &--max {
+      @include custom-col-max(52.2%);
+
+      &:before {
+        content: "";
+        @include shadow-box;
+        background-color: rgba(46, 91, 186, 0.1);
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      &--max {
+        @include custom-col-max(55%);
+      }
+
+      &--min {
+        @include custom-col-min(40%, $translateY: -32%);
+      }
+
+      &--left {
+        @include custom-col-min-position-left($left: 2rem);
+      }
+
+      &--right {
+        @include custom-col-min-position-right($right: 2rem);
+        top: 80%;
+        width: 30%;
+      }
     }
   }
 
   @media screen and (max-width: 768px) {
     margin: 8rem auto 0;
+
+    &__info {
+      margin-top: 3.5rem;
+    }
   }
 }

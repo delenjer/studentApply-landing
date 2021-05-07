@@ -31,6 +31,7 @@
 }
 
 @mixin custom-col-max($size) {
+  position: relative;
   width: $size;
   margin: auto;
   z-index: 6;
