@@ -33,6 +33,7 @@
 }
 
 .main-info {
+  position: relative;
   margin: 6rem auto 0;
   background-color: #fff;
    border: 16px solid rgba(255, 255, 255, 0.1);
@@ -116,4 +117,13 @@
     object-fit: contain;
     margin: auto;
   }
+}
+
+.ellipse {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #57C593;
+  border-radius: 50%;
+  z-index: 2;
 }
