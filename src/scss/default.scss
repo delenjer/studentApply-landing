@@ -5,7 +5,7 @@
   background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
 }
 
-.section-bottom {
+.section-middle {
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%);
 }
@@ -53,7 +53,7 @@
   //border-top: 0;
   //border-radius: 0 0 48px 48px;
   z-index: 7;
-  background: url("../img/bg.png") no-repeat center;
+  background: url("../img/bg.svg") no-repeat center;
   background-size: contain;
   padding-bottom: 35rem;
 
@@ -119,11 +119,32 @@
   }
 }
 
+.ellipse-container {
+  position: relative;
+}
+
 .ellipse {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #57C593;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
+
+  &__max {
+    width: 8px;
+    height: 8px;
+    background-color: #57C593;
+
+    &--bg-yellow {
+      background: #FFAB00;
+    }
+  }
+
+  &__min {
+    width: 4px;
+    height: 4px;
+    background-color: #4F87FB;
+
+    &--bg-yellow {
+      background: #FFAB00;
+    }
+  }
 }

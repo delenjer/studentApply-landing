@@ -10,11 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
   </head>
   <body>
     <div class="section-top">
-      <section class="main-info wrapper">
+      <section class="main-info wrapper ellipse-container">
         <div class="shadow-circle shadow-circle__top-right"></div>
         <div class="shadow-circle shadow-circle__top-left"></div>
 
@@ -26,7 +30,7 @@
           <article class="header__poster">
             <img
                 class="header__poster--img"
-                src="./img/university-list.png"
+                src="./img/university-listt.png"
                 alt="University list photo"
             >
             <img
@@ -37,27 +41,27 @@
           </article>
         </header>
 
-        <div class="circle-img circle-img__el-1">
+        <div class="circle-img circle-img__el-1 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
           <img class="circle-img__img" src="./img/min-icon/min-photo-1.png" alt="Photo">
         </div>
-        <div class="circle-img circle-img__el-2">
+        <div class="circle-img circle-img__el-2 wow animate__animated animate__bounceIn" data-wow-delay="0.5s">
           <img class="circle-img__img" src="./img/min-icon/min-photo-2.png" alt="Photo">
         </div>
-        <div class="circle-img circle-img__el-3">
+        <div class="circle-img circle-img__el-3 wow animate__animated animate__bounceIn" data-wow-delay="0.8s">
           <img class="circle-img__img" src="./img/min-icon/min-photo-3.png" alt="Photo">
         </div>
 
         <article class="info wrapper">
           <div class="info__col">
-            <div class="icon info__icon">
+            <div class="icon info__icon wow animate__animated animate__bounceIn">
               <img class="icon--img" src="img/icons/monitor.svg" alt="About the Project">
             </div>
 
-            <h3 class="title info__title">
+            <h3 class="title info__title wow animate__animated animate__fadeInLeft">
               About the Project
             </h3>
 
-            <p class="text info__text">
+            <p class="text info__text wow animate__animated animate__backInLeft">
               This platform is a revolutionary web-based platform which allows students
               and student-recruiters to apply to multiple
               universities, colleges, and high schools across numerous countries with just one,
@@ -66,15 +70,15 @@
           </div>
 
           <div class="info__col">
-            <div class="icon info__icon">
+            <div class="icon info__icon wow animate__animated animate__bounceIn">
               <img class="icon--img" src="img/icons/note.svg" alt="Main Tasks">
             </div>
 
-            <h3 class="title info__title">
+            <h3 class="title info__title wow animate__animated animate__fadeInRight">
               Main Tasks
             </h3>
 
-            <p class="text info__text">
+            <p class="text info__text wow animate__animated animate__backInRight">
               For prospective students - to make the process of making applications to
               university as simple and comfortable as possible. For partner agents - to create a
               convenient tool for working with students and universities.
@@ -84,7 +88,7 @@
 
         <section class="users wrapper">
 
-          <h2 class="box-title users__title">
+          <h2 class="box-title users__title wow animate__animated animate__fadeInUp">
             Main Users
           </h2>
 
@@ -93,7 +97,7 @@
           </p>
 
           <div class="users__wrap">
-            <div class="users__col">
+            <div class="users__col wow animate__animated animate__fadeInLeft">
               <div class="users__photo">
                 <img src="./img/users/user-1.png" alt="Photo" class="users__photo--img">
               </div>
@@ -107,7 +111,7 @@
               </p>
             </div>
 
-            <div class="users__col">
+            <div class="users__col wow animate__animated animate__fadeInUp">
               <div class="users__photo">
                 <img src="./img/users/user-3.png" alt="Photo" class="users__photo--img">
               </div>
@@ -121,7 +125,7 @@
               </p>
             </div>
 
-            <div class="users__col">
+            <div class="users__col wow animate__animated animate__fadeInRight">
               <div class="users__photo">
                 <img src="./img/users/user-2.png" alt="Photo" class="users__photo--img">
               </div>
@@ -136,18 +140,19 @@
             </div>
           </div>
 
-          <div class="circle-img circle-img__el-4">
+          <div class="circle-img circle-img__el-4 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
             <img class="circle-img__img" src="./img/min-icon/min-photo-4.png" alt="Photo">
           </div>
-          <div class="circle-img circle-img__el-5">
+
+          <div class="circle-img circle-img__el-5 wow animate__animated animate__bounceIn" data-wow-delay="0.5s">
             <img class="circle-img__img" src="./img/min-icon/min-photo-5.png" alt="Photo">
           </div>
         </section>
       </section>
     </div>
 
-    <div class="section-bottom">
-      <section class="to-students">
+    <div class="section-middle">
+      <section class="to-students ellipse-container">
         <article class="for-students wrapper">
           <h2 class="title-for">
             For Students:
@@ -236,11 +241,10 @@
           </div>
         </article>
       </section>
-
-<!--      <div class="triangle-box"></div>-->
     </div>
 
-    <article class="for-partners">
+    <div class="ellipse-container">
+      <article class="for-partners">
         <div class="wrapper">
           <h2 class="title-for">
             For Agents and Partners:
@@ -266,180 +270,180 @@
         </div>
       </article>
 
-    <article class="materials">
-    <div class="wrapper">
-      <h2 class="box-title">
-        Training materials and comision rate
-      </h2>
+      <article class="materials">
+        <div class="wrapper">
+          <h2 class="box-title">
+            Training materials and comision rate
+          </h2>
 
-      <p class="text materials__text">
-        Access to a personalized commission rate for each university and platform training materials.
-      </p>
-    </div>
+          <p class="text materials__text">
+            Access to a personalized commission rate for each university and platform training materials.
+          </p>
+        </div>
 
-    <div class="materials__info">
-      <div
-          class="materials__info-col
+        <div class="materials__info">
+          <div
+            class="materials__info-col
           materials__info-col--side
           materials__info-col--side-left"
-      >
-        <img class="materials__info--img" src="./img/materials-1.png" alt="List">
-      </div>
+          >
+            <img class="materials__info--img" src="./img/materials-1.png" alt="List">
+          </div>
 
-      <div class="materials__info-col">
-        <img class="materials__info--img" src="./img/materials-2.png" alt="List">
-      </div>
+          <div class="materials__info-col">
+            <img class="materials__info--img" src="./img/materials-2.png" alt="List">
+          </div>
 
-      <div
-          class="materials__info-col
+          <div
+            class="materials__info-col
           materials__info-col--side
           materials__info-col--side-right"
-      >
-        <img class="materials__info--img" src="./img/materials-3.png" alt="List">
-      </div>
-    </div>
-  </article>
+          >
+            <img class="materials__info--img" src="./img/materials-3.png" alt="List">
+          </div>
+        </div>
+      </article>
 
-    <article class="application-tracking">
-    <div class="application-tracking__wrap">
-      <h2 class="box-title">
-        Applications tracking
-      </h2>
+      <article class="application-tracking">
+        <div class="application-tracking__wrap">
+          <h2 class="box-title">
+            Applications tracking
+          </h2>
 
-      <p class="text services__text">
-        Each agent can track the application status, update documents, send and receive notifications.
-      </p>
+          <p class="text services__text">
+            Each agent can track the application status, update documents, send and receive notifications.
+          </p>
 
-      <div class="application-tracking__info">
-        <div class="application-tracking__col application-tracking__col--min application-tracking__col--left">
-          <img class="application-tracking__info--img" src="./img/tracking-1.png" alt="List">
+          <div class="application-tracking__info">
+            <div class="application-tracking__col application-tracking__col--min application-tracking__col--left">
+              <img class="application-tracking__info--img" src="./img/tracking-1.png" alt="List">
+            </div>
+
+            <div class="application-tracking__col application-tracking__col--max">
+              <img class="application-tracking__info--img" src="./img/tracking-2.png" alt="List">
+            </div>
+
+            <div class="application-tracking__col application-tracking__col--min application-tracking__col--right">
+              <img class="application-tracking__info--img" src="./img/tracking-3.png" alt="List">
+            </div>
+          </div>
+
+          <div class="shadow-circle shadow-circle__application-tracking-right"></div>
+        </div>
+      </article>
+
+      <article class="our-service">
+        <div class="wrapper">
+          <h2 class="box-title">
+            Our Services
+          </h2>
+
+          <div class="our-service__content">
+            <div class="our-service__col">
+              <h3 class="our-service__col-title">
+                Research
+              </h3>
+
+              <ul class="our-service__list">
+                <li class="our-service__item">
+                  Requirements Clarification
+                </li>
+                <li class="our-service__item">
+                  Business Analysis
+                </li>
+                <li class="our-service__item">
+                  Competitors Analysis
+                </li>
+                <li class="our-service__item">
+                  Project Estimation
+                </li>
+                <li class="our-service__item">
+                  Team organisation
+                </li>
+              </ul>
+            </div>
+
+            <div class="our-service__col">
+              <h3 class="our-service__col-title">
+                UX design
+              </h3>
+
+              <ul class="our-service__list">
+                <li class="our-service__item">
+                  Data Analysis
+                </li>
+                <li class="our-service__item">
+                  User Stories
+                </li>
+                <li class="our-service__item">
+                  User Flows
+                </li>
+                <li class="our-service__item">
+                  Brainstorming
+                </li>
+                <li class="our-service__item">
+                  Sketches & Wireframes
+                </li>
+              </ul>
+            </div>
+
+            <div class="our-service__col">
+              <h3 class="our-service__col-title">
+                UI design
+              </h3>
+
+              <ul class="our-service__list">
+                <li class="our-service__item">
+                  Moodboard
+                </li>
+                <li class="our-service__item">
+                  Logo design
+                </li>
+                <li class="our-service__item">
+                  Logo design
+                </li>
+                <li class="our-service__item">
+                  Concept preparation
+                </li>
+                <li class="our-service__item">
+                  Design system
+                </li>
+                <li class="our-service__item">
+                  Interface design
+                </li>
+                <li class="our-service__item">
+                  Responsive design
+                </li>
+              </ul>
+            </div>
+
+            <div class="our-service__col">
+              <h3 class="our-service__col-title">
+                Development
+              </h3>
+
+              <ul class="our-service__list">
+                <li class="our-service__item">
+                  CMS/Admin System
+                </li>
+                <li class="our-service__item">
+                  Multiple users entity
+                </li>
+                <li class="our-service__item">
+                  QA
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="application-tracking__col application-tracking__col--max">
-          <img class="application-tracking__info--img" src="./img/tracking-2.png" alt="List">
-        </div>
+        <div class="shadow-circle shadow-circle__our-service-right"></div>
+      </article>
 
-        <div class="application-tracking__col application-tracking__col--min application-tracking__col--right">
-          <img class="application-tracking__info--img" src="./img/tracking-3.png" alt="List">
-        </div>
-      </div>
+      <footer class="footer">
+        <div class="shadow-circle shadow-circle__footer-left"></div>
 
-      <div class="shadow-circle shadow-circle__application-tracking-right"></div>
-    </div>
-  </article>
-
-    <article class="our-service">
-    <div class="wrapper">
-      <h2 class="box-title">
-        Our Services
-      </h2>
-
-      <div class="our-service__content">
-        <div class="our-service__col">
-          <h3 class="our-service__col-title">
-            Research
-          </h3>
-
-          <ul class="our-service__list">
-            <li class="our-service__item">
-              Requirements Clarification
-            </li>
-            <li class="our-service__item">
-              Business Analysis
-            </li>
-            <li class="our-service__item">
-              Competitors Analysis
-            </li>
-            <li class="our-service__item">
-              Project Estimation
-            </li>
-            <li class="our-service__item">
-              Team organisation
-            </li>
-          </ul>
-        </div>
-
-        <div class="our-service__col">
-          <h3 class="our-service__col-title">
-            UX design
-          </h3>
-
-          <ul class="our-service__list">
-            <li class="our-service__item">
-              Data Analysis
-            </li>
-            <li class="our-service__item">
-              User Stories
-            </li>
-            <li class="our-service__item">
-              User Flows
-            </li>
-            <li class="our-service__item">
-              Brainstorming
-            </li>
-            <li class="our-service__item">
-              Sketches & Wireframes
-            </li>
-          </ul>
-        </div>
-
-        <div class="our-service__col">
-          <h3 class="our-service__col-title">
-            UI design
-          </h3>
-
-          <ul class="our-service__list">
-            <li class="our-service__item">
-              Moodboard
-            </li>
-            <li class="our-service__item">
-              Logo design
-            </li>
-            <li class="our-service__item">
-              Logo design
-            </li>
-            <li class="our-service__item">
-              Concept preparation
-            </li>
-            <li class="our-service__item">
-              Design system
-            </li>
-            <li class="our-service__item">
-              Interface design
-            </li>
-            <li class="our-service__item">
-              Responsive design
-            </li>
-          </ul>
-        </div>
-
-        <div class="our-service__col">
-          <h3 class="our-service__col-title">
-            Development
-          </h3>
-
-          <ul class="our-service__list">
-            <li class="our-service__item">
-              CMS/Admin System
-            </li>
-            <li class="our-service__item">
-              Multiple users entity
-            </li>
-            <li class="our-service__item">
-              QA
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="shadow-circle shadow-circle__our-service-right"></div>
-  </article>
-
-    <footer class="footer">
-      <div class="shadow-circle shadow-circle__footer-left"></div>
-
-      <div class="wrapper">
+        <div class="wrapper">
           <div class="icon footer__icon">
             <img class="icon--img" src="img/icons/rocket.svg" alt="Thank you for watching icon">
           </div>
@@ -448,6 +452,7 @@
 
           <h2 class="title-for footer__title-wish">Your Admission. Simplified</h2>
         </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
