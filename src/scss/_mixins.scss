@@ -1,5 +1,46 @@
+@import "vars";
+
 @mixin flex-space-between-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin shadow-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: $shadow-bg;
+  filter: blur(148px);
+  z-index: 4;
+}
+
+@mixin custom-col-min($size, $translateY: 0) {
+  position: absolute;
+  top: 50%;
+  transform: translateY($translateY);
+  width: $size;
+
+  &:before {
+    content: "";
+    @include shadow-box;
+  }
+}
+
+@mixin custom-col-max($size) {
+  position: relative;
+  width: $size;
+  margin: auto;
+  z-index: 6;
+}
+
+@mixin custom-col-min-position-left($left) {
+  left: $left;
+}
+
+@mixin custom-col-min-position-right($right) {
+  right: $right;
 }

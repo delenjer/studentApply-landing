@@ -1,10 +1,12 @@
+@import "mixins";
+
 .application-tracking {
   position: relative;
 
   &__wrap {
     width: 100%;
     max-width: 123.7rem;
-    margin: 12rem auto 0;
+    margin: 25.6rem auto 0;
     text-align: center;
   }
 
@@ -14,15 +16,54 @@
     z-index: 5;
 
     &--img {
+      position: relative;
       display: block;
       width: 100%;
       object-fit: cover;
+      z-index: 5;
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  &__col {
+    &--min {
+      @include custom-col-min(43%, $translateY: -50%);
+    }
+
+    &--left {
+      @include custom-col-min-position-left($left: 5.5rem);
+    }
+
+    &--right {
+      @include custom-col-min-position-right($right: 8rem);
+      width: 20%;
+    }
+
+    &--max {
+      @include custom-col-max(53%);
+    }
+
+    @media screen and (max-width: 1024px) {
+      &--max {
+        @include custom-col-max(55%);
+      }
+
+      &--left {
+        @include custom-col-min-position-left($left: 2.5rem);
+      }
+
+      &--right {
+        @include custom-col-min-position-right($right: 4rem);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     &__wrap {
-      padding: 0 1rem;
+      margin-top: 8rem;
+    }
+
+    &__info {
+      margin-top: 3.5rem;
     }
   }
 }

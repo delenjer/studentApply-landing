@@ -1,5 +1,7 @@
+@import "mixins";
+
 .materials {
-  margin-top: 12rem;
+  margin-top: 25.6rem;
   text-align: center;
 
   &__text {
@@ -7,22 +9,46 @@
   }
 
   &__info {
-    margin-top: -5rem;
+    position: relative;
+    margin-top: 5.6rem;
 
     &--img {
       position: relative;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      z-index: 5;
     }
   }
 
-  @media screen and (max-width: 1500px) {
-    &__info {
-      margin-top: 0;
+  &__info-col {
+    position: relative;
+    width: 48%;
+    margin: 0 auto;
+
+    &:before {
+      content: "";
+      @include shadow-box;
+    }
+
+    &--side {
+      position: absolute;
+      top: 0;
+    }
+
+    &--side-left {
+      left: -23%;
+    }
+
+    &--side-right {
+      right: -23%;
     }
   }
 
   @media screen and (max-width: 768px) {
     margin: 8rem auto 0;
+
+    &__info {
+      margin-top: 3.5rem;
+    }
   }
 }
