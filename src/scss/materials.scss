@@ -24,25 +24,26 @@
 
   &__info-col {
     position: relative;
-    width: 48%;
     margin: 0 auto;
 
-    &:before {
-      content: "";
-      @include shadow-box;
+    &--min {
+      @include custom-col-min(43%, $translateY: -50%);
     }
 
-    &--side {
-      position: absolute;
-      top: 0;
+    &--left {
+      @include custom-col-min-position-left($left: 1.5rem);
     }
 
-    &--side-left {
-      left: -23%;
+    &--right {
+      @include custom-col-min-position-right($right: 1.5rem);
     }
 
-    &--side-right {
-      right: -23%;
+    &--max {
+      @include custom-col-max(60%);
+
+      @media screen and (max-width: 1024px) {
+        @include custom-col-max(55%);
+      }
     }
   }
 

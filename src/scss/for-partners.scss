@@ -15,10 +15,7 @@
   }
 
   &__info {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    transform: translateX(13%);
+    position: relative;
     margin-top: 5.6rem;
 
     &--img {
@@ -33,16 +30,25 @@
   }
 
   &__info-col {
-    position: relative;
-    width: 52%;
-
-    &:before {
-      content: "";
-      @include shadow-box;
+    &--min {
+      @include custom-col-min(30%, $translateY: 0);
     }
 
-    &:not(:last-of-type) {
-      margin-right: 4rem;
+    &--right {
+      @include custom-col-min-position-right($right: 9rem);
+      bottom: 0;
+      width: 40%;
+      z-index: 7;
+    }
+
+    &--max {
+      @include custom-col-max(70%);
+
+      &:before {
+        content: "";
+        @include shadow-box;
+        background-color: rgba(46, 91, 186, 0.1);
+      }
     }
   }
 
@@ -66,8 +72,8 @@
     }
 
     &__info-col {
-      &:not(:last-of-type) {
-        margin-right: 2rem;
+      &--right {
+        @include custom-col-min-position-right($right: 0);
       }
     }
   }
