@@ -465,8 +465,6 @@
   .for-students__info-wrap {
     position: relative; }
     .for-students__info-wrap--my-app {
-      display: flex;
-      justify-content: flex-end;
       margin-top: 3.1rem; }
     .for-students__info-wrap--education {
       position: relative;
@@ -521,7 +519,6 @@
         .for-students__info--img {
           border: 3px solid #fff; }
       .for-students__info-wrap--my-app {
-        justify-content: center;
         margin-top: 1rem; }
       .for-students__info-col {
         width: 100%; }
