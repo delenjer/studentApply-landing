@@ -51,8 +51,6 @@
     position: relative;
 
     &--my-app {
-      display: flex;
-      justify-content: flex-end;
       margin-top: 3.1rem;
     }
 
@@ -142,9 +140,7 @@
     }
 
     &__info-wrap {
-
       &--my-app {
-        justify-content: center;
         margin-top: 1rem;
       }
     }
