@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const wow = new (wow_js_dist_wow_js__WEBPACK_IMPORTED_MODULE_3___default())({
   boxClass: 'wow',
-  offset: 50,
+  offset: 0,
   mobile: false
 });
 wow.init();
