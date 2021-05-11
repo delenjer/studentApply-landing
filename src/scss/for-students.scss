@@ -1,3 +1,5 @@
+@import "vars";
+
 .for-students {
   margin-top: 25.6rem;
   text-align: center;
@@ -25,6 +27,8 @@
       position: relative;
       width: 100%;
       object-fit: contain;
+      border: 8px solid $main-border-color;
+      border-radius: 16px;
       z-index: 5;
     }
   }
@@ -39,7 +43,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-right: 3rem;
+      margin-right: 7rem;
     }
   }
 
@@ -70,13 +74,13 @@
       &:after {
         background: url("../img/icons/arrow-right.svg") no-repeat center;
         top: 12rem;
-        left: -10rem;
+        left: -12rem;
       }
 
       &:before {
         background: url("../img/icons/arrow-left.svg") no-repeat center;
         bottom: 9rem;
-        left: -7rem;
+        left: -9rem;
       }
 
       @media screen and (max-width: 1200px) {
@@ -84,8 +88,8 @@
 
         &:after,
         &:before {
-          width: 12rem;
-          height: 9rem;
+          width: 10rem;
+          height: 7rem;
           background-size: contain;
         }
 
@@ -96,7 +100,7 @@
 
         &:before {
           bottom: 2rem;
-          left: -8rem;
+          left: -7rem;
         }
       }
 
@@ -107,6 +111,14 @@
         &:before {
           display: none;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__info-col {
+      &:not(:last-of-type) {
+        margin-right: 3rem;
       }
     }
   }
@@ -123,6 +135,10 @@
       justify-content: center;
       align-items: center;
       margin-top: 3.5rem;
+
+      &--img {
+        border: 3px solid $main-border-color;
+      }
     }
 
     &__info-wrap {
@@ -140,27 +156,5 @@
         margin-right: 0;
       }
     }
-  }
-}
-
-.img-my-app {
-  width: 100%;
-  max-width: 44.1rem;
-  margin-right: 1.1rem;
-
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    margin-right: 0;
-  }
-}
-
-.img-chunk-app {
-  position: absolute;
-  top: 10.9rem;
-  right: -1.9rem;
-  width: 75%;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
   }
 }

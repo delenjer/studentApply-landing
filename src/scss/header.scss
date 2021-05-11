@@ -1,3 +1,5 @@
+@import "vars";
+
 .header {
   position: relative;
   text-align: center;
@@ -36,7 +38,7 @@
       display: block;
       width: 100%;
       object-fit: cover;
-      border: 10px solid #fff;
+      border: 10px solid $main-border-color;
       border-radius: 16px;
       z-index: 5;
     }
@@ -47,6 +49,8 @@
       height: 20.9rem;
       bottom: -5rem;
       left: -5rem;
+      border: 8px solid rgba(255, 255, 255, 0.9);
+      border-radius: 4px;
       z-index: 6;
     }
   }
@@ -89,11 +93,16 @@
       width: 90%;
       margin: 3rem auto;
 
+      &--img {
+        border: 3px solid $main-border-color;
+      }
+
       &--img-min {
         position: absolute;
         width: 12rem;
         height: 10rem;
         bottom: -2rem;
+        border: 3px solid rgba(255, 255, 255, 0.9);
         left: -2rem;
       }
     }

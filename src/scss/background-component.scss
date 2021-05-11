@@ -103,6 +103,7 @@
     top: 8.9rem;
     right: 11.4rem;
   }
+
   &__el-3 {
     width: 40px;
     height: 40px;
@@ -130,5 +131,16 @@
     height: auto;
     object-fit: cover;
     border-radius: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__el-2 {
+      right: 25rem;
+    }
+
+    &__el-3 {
+      top: 1rem;
+      left: 10.5rem;
+    }
   }
 }

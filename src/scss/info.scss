@@ -1,8 +1,10 @@
 .info {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 16.8rem auto 0;
+  z-index: 5;
 
   &__col {
     width: 40.4rem;
