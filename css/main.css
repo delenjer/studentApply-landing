@@ -2,7 +2,7 @@
   padding-top: 6rem;
   background: linear-gradient(180deg, #C1D9FF 0%, #EBF2FF 57.81%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%); }
 
-.section-bottom {
+.section-middle {
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF2FF 25%, #EBF2FF 77.6%, rgba(255, 255, 255, 0) 100%); }
 
@@ -26,6 +26,7 @@
       border: 8px solid rgba(240, 248, 255, 0.7); } }
 
 .main-info {
+  position: relative;
   margin: 6rem auto 0;
   background-color: #fff;
   border: 16px solid rgba(255, 255, 255, 0.1);
@@ -38,9 +39,10 @@
 .to-students {
   margin: 0 auto;
   z-index: 7;
-  background: url(.././img/bg.png) no-repeat center;
+  background: url(.././img/bg.svg) no-repeat center;
   background-size: contain;
-  padding-bottom: 35rem; }
+  padding-bottom: 35rem;
+  border: none; }
   @media screen and (max-width: 1200px) {
     .to-students {
       background: none;
@@ -91,6 +93,26 @@
     object-fit: contain;
     margin: auto; }
 
+.ellipse-container {
+  position: relative; }
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1; }
+  .ellipse__max {
+    width: 8px;
+    height: 8px;
+    background-color: #57C593; }
+    .ellipse__max--bg-yellow {
+      background: #FFAB00; }
+  .ellipse__min {
+    width: 4px;
+    height: 4px;
+    background-color: #4F87FB; }
+    .ellipse__min--bg-yellow {
+      background: #FFAB00; }
+
 .header {
   position: relative;
   text-align: center;
@@ -123,6 +145,8 @@
       display: block;
       width: 100%;
       object-fit: cover;
+      border: 10px solid #fff;
+      border-radius: 16px;
       z-index: 5; }
     .header__poster--img-min {
       position: absolute;
@@ -130,6 +154,8 @@
       height: 20.9rem;
       bottom: -5rem;
       left: -5rem;
+      border: 8px solid rgba(255, 255, 255, 0.9);
+      border-radius: 4px;
       z-index: 6; }
   @media screen and (max-width: 1200px) {
     .header__title {
@@ -157,11 +183,14 @@
     .header__poster {
       width: 90%;
       margin: 3rem auto; }
+      .header__poster--img {
+        border: 3px solid #fff; }
       .header__poster--img-min {
         position: absolute;
         width: 12rem;
         height: 10rem;
         bottom: -2rem;
+        border: 3px solid rgba(255, 255, 255, 0.9);
         left: -2rem; } }
   @media screen and (max-width: 500px) {
     .header__title {
@@ -273,12 +302,20 @@
     height: auto;
     object-fit: cover;
     border-radius: 50%; }
+  @media screen and (max-width: 768px) {
+    .circle-img__el-2 {
+      right: 25rem; }
+    .circle-img__el-3 {
+      top: 1rem;
+      left: 10.5rem; } }
 
 .info {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 16.8rem auto 0; }
+  margin: 16.8rem auto 0;
+  z-index: 5; }
   .info__col {
     width: 40.4rem; }
   .info__title {
@@ -406,6 +443,8 @@
       position: relative;
       width: 100%;
       object-fit: contain;
+      border: 8px solid #fff;
+      border-radius: 16px;
       z-index: 5; }
   .for-students__info-col {
     position: relative;
@@ -422,7 +461,7 @@
       filter: blur(148px);
       z-index: 4; }
     .for-students__info-col:not(:last-of-type) {
-      margin-right: 3rem; }
+      margin-right: 7rem; }
   .for-students__info-wrap {
     position: relative; }
     .for-students__info-wrap--my-app {
@@ -443,29 +482,32 @@
       .for-students__info-wrap--education:after {
         background: url(.././img/arrow-right.svg) no-repeat center;
         top: 12rem;
-        left: -10rem; }
+        left: -12rem; }
       .for-students__info-wrap--education:before {
         background: url(.././img/arrow-left.svg) no-repeat center;
         bottom: 9rem;
-        left: -7rem; }
+        left: -9rem; }
       @media screen and (max-width: 1200px) {
         .for-students__info-wrap--education {
           width: 100%; }
           .for-students__info-wrap--education:after, .for-students__info-wrap--education:before {
-            width: 12rem;
-            height: 9rem;
+            width: 10rem;
+            height: 7rem;
             background-size: contain; }
           .for-students__info-wrap--education:after {
             top: 10rem;
             left: -7rem; }
           .for-students__info-wrap--education:before {
             bottom: 2rem;
-            left: -8rem; } }
+            left: -7rem; } }
       @media screen and (max-width: 768px) {
         .for-students__info-wrap--education {
           margin-top: 1rem; }
           .for-students__info-wrap--education:after, .for-students__info-wrap--education:before {
             display: none; } }
+  @media screen and (max-width: 1200px) {
+    .for-students__info-col:not(:last-of-type) {
+      margin-right: 3rem; } }
   @media screen and (max-width: 768px) {
     .for-students {
       margin-top: 8rem; }
@@ -476,6 +518,8 @@
         justify-content: center;
         align-items: center;
         margin-top: 3.5rem; }
+        .for-students__info--img {
+          border: 3px solid #fff; }
       .for-students__info-wrap--my-app {
         justify-content: center;
         margin-top: 1rem; }
@@ -483,24 +527,6 @@
         width: 100%; }
         .for-students__info-col:not(:last-of-type) {
           margin-right: 0; } }
-
-.img-my-app {
-  width: 100%;
-  max-width: 44.1rem;
-  margin-right: 1.1rem; }
-  @media screen and (max-width: 768px) {
-    .img-my-app {
-      max-width: 100%;
-      margin-right: 0; } }
-
-.img-chunk-app {
-  position: absolute;
-  top: 10.9rem;
-  right: -1.9rem;
-  width: 75%; }
-  @media screen and (max-width: 1024px) {
-    .img-chunk-app {
-      display: none; } }
 
 .profile {
   position: relative;
@@ -520,6 +546,8 @@
       display: block;
       width: 100%;
       object-fit: cover;
+      border: 8px solid #fff;
+      border-radius: 12px;
       z-index: 5; }
   .profile__col--min {
     position: absolute;
@@ -556,7 +584,9 @@
     .profile {
       margin-top: 12rem; }
       .profile__info {
-        margin-top: 3.5rem; } }
+        margin-top: 3.5rem; }
+        .profile__info--img {
+          border: 3px solid #fff; } }
 
 .personal-plane {
   position: relative;
@@ -575,6 +605,8 @@
       display: block;
       width: 100%;
       object-fit: cover;
+      border: 8px solid #fff;
+      border-radius: 12px;
       z-index: 5; }
   .personal-plane__col--min {
     position: absolute;
@@ -648,11 +680,15 @@
     .personal-plane {
       margin: 8rem auto 0; }
       .personal-plane__info {
-        margin-top: 3.5rem; } }
+        margin-top: 3.5rem; }
+        .personal-plane__info--img {
+          border: 3px solid #fff; } }
 
 .for-partners {
+  position: relative;
   margin-top: 10rem;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   .for-partners__title {
     margin-top: 5.6rem; }
   .for-partners__text {
@@ -668,6 +704,8 @@
       position: relative;
       width: 100%;
       object-fit: contain;
+      border: 8px solid #fff;
+      border-radius: 16px;
       z-index: 5; }
   .for-partners__info-col {
     position: relative;
@@ -695,6 +733,8 @@
         margin-top: 2rem; }
       .for-partners__info {
         margin-top: 3.5rem; }
+        .for-partners__info--img {
+          border: 3px solid #fff; }
       .for-partners__info-col:not(:last-of-type) {
         margin-right: 2rem; } }
 
@@ -732,6 +772,8 @@
       display: block;
       width: 100%;
       object-fit: cover;
+      border: 8px solid #fff;
+      border-radius: 12px;
       z-index: 5; }
   .application-tracking__col--min {
     position: absolute;
@@ -773,7 +815,9 @@
     .application-tracking__wrap {
       margin-top: 8rem; }
     .application-tracking__info {
-      margin-top: 3.5rem; } }
+      margin-top: 3.5rem; }
+      .application-tracking__info--img {
+        border: 3px solid #fff; } }
 
 .materials {
   margin-top: 25.6rem;
@@ -787,6 +831,8 @@
       position: relative;
       width: 100%;
       object-fit: cover;
+      border: 8px solid #fff;
+      border-radius: 12px;
       z-index: 5; }
   .materials__info-col {
     position: relative;
@@ -814,7 +860,9 @@
     .materials {
       margin: 8rem auto 0; }
       .materials__info {
-        margin-top: 3.5rem; } }
+        margin-top: 3.5rem; }
+        .materials__info--img {
+          border: 3px solid #fff; } }
 
 .our-service {
   position: relative;
@@ -882,7 +930,9 @@
       .our-service__col-title {
         font-size: 1.8rem; }
       .our-service__list {
-        padding: 1.5rem; } }
+        padding: 1.5rem; }
+      .our-service__item {
+        font-size: 1.4rem; } }
 
 .footer {
   position: relative;
