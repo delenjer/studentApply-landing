@@ -7,7 +7,7 @@ import WOW from 'wow.js/dist/wow.js';
 const wow = new WOW(
   {
     boxClass: 'wow',
-    offset: 50,
+    offset: 0,
     mobile: false,
   }
 )
